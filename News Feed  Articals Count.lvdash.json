@@ -1,0 +1,656 @@
+{
+  "datasets": [
+    {
+      "name": "ff281795",
+      "displayName": "cnbc",
+      "queryLines": [
+        "select * from cnbc"
+      ],
+      "catalog": "stockmarket",
+      "schema": "sliver"
+    },
+    {
+      "name": "b0ec1aad",
+      "displayName": "Time of india",
+      "queryLines": [
+        "select * from timesofindia"
+      ],
+      "catalog": "stockmarket",
+      "schema": "sliver"
+    },
+    {
+      "name": "4ffd3923",
+      "displayName": "Economictimes",
+      "queryLines": [
+        "select * from economictimes"
+      ],
+      "catalog": "stockmarket",
+      "schema": "sliver"
+    },
+    {
+      "name": "f8411b22",
+      "displayName": "Hindu business",
+      "queryLines": [
+        "select * from stockmarket.sliver.hindubusinessline"
+      ]
+    },
+    {
+      "name": "907deb79",
+      "displayName": "Mint",
+      "queryLines": [
+        "select * from stockmarket.sliver.mint"
+      ]
+    },
+    {
+      "name": "79197c31",
+      "displayName": "Moneycontrol",
+      "queryLines": [
+        "select * from stockmarket.sliver.moneycontrol;\r\n",
+        "\r\n"
+      ]
+    },
+    {
+      "name": "ac58e437",
+      "displayName": "raw cnbc",
+      "queryLines": [
+        "select * from cnbc"
+      ],
+      "catalog": "stockmarket",
+      "schema": "raw"
+    },
+    {
+      "name": "4b1a2962",
+      "displayName": "raw timesofindia",
+      "queryLines": [
+        "select * from timesofindia"
+      ],
+      "catalog": "stockmarket",
+      "schema": "raw"
+    },
+    {
+      "name": "1f17a42c",
+      "displayName": "economictimes",
+      "queryLines": [
+        "select * from economictimes"
+      ],
+      "catalog": "stockmarket",
+      "schema": "raw"
+    },
+    {
+      "name": "5636f746",
+      "displayName": "raw hindubusinessline",
+      "queryLines": [
+        "select * from hindubusinessline"
+      ],
+      "catalog": "stockmarket",
+      "schema": "raw"
+    },
+    {
+      "name": "62d265c8",
+      "displayName": "raw mint",
+      "queryLines": [
+        "select * from mint"
+      ],
+      "catalog": "stockmarket",
+      "schema": "raw"
+    },
+    {
+      "name": "4812ade4",
+      "displayName": "moneycontrol",
+      "queryLines": [
+        "select * from moneycontrol;\r\n"
+      ],
+      "catalog": "stockmarket",
+      "schema": "raw"
+    },
+    {
+      "name": "7b923688",
+      "displayName": "ground",
+      "queryLines": [
+        "select *from grandtable"
+      ],
+      "catalog": "stockmarket",
+      "schema": "gold"
+    }
+  ],
+  "pages": [
+    {
+      "name": "21cf88f0",
+      "displayName": "Artical Counts",
+      "layout": [
+        {
+          "widget": {
+            "name": "cnbc",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ff281795",
+                  "fields": [
+                    {
+                      "name": "countdistinct(title)",
+                      "expression": "COUNT(DISTINCT `title`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "showDescription": true,
+                "title": "CNBC",
+                "description": "Artical count\n"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "countdistinct(title)"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "6e208696",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "b0ec1aad",
+                  "fields": [
+                    {
+                      "name": "count(*)",
+                      "expression": "COUNT(`*`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "showDescription": true,
+                "title": "Time of India\n",
+                "description": "Artical count\n"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "count(*)"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 3,
+            "y": 0,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "e5af2845",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "4ffd3923",
+                  "fields": [
+                    {
+                      "name": "count(*)",
+                      "expression": "COUNT(`*`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "showDescription": true,
+                "title": "Economic times\n",
+                "description": "Artical count\n"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "count(*)"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 0,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "a917b6bc",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "f8411b22",
+                  "fields": [
+                    {
+                      "name": "count(*)",
+                      "expression": "COUNT(`*`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "showDescription": true,
+                "title": "Hindu business",
+                "description": "Artical count\n"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "count(*)"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 3,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "4cfbd246",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "907deb79",
+                  "fields": [
+                    {
+                      "name": "count(*)",
+                      "expression": "COUNT(`*`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "showDescription": true,
+                "title": "Mint",
+                "description": "Artical count\n"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "count(*)"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 3,
+            "y": 3,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "d40976b5",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "79197c31",
+                  "fields": [
+                    {
+                      "name": "count(*)",
+                      "expression": "COUNT(`*`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "showDescription": true,
+                "title": "Money Control",
+                "description": "Artical count\n"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "count(*)"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 3,
+            "width": 3,
+            "height": 3
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    },
+    {
+      "name": "d9974ca1",
+      "displayName": "Global Filters",
+      "pageType": "PAGE_TYPE_GLOBAL_FILTERS",
+      "layoutVersion": "GRID_V1"
+    },
+    {
+      "name": "84e7bef1",
+      "displayName": "Artical Counts 1",
+      "layout": [
+        {
+          "widget": {
+            "name": "c46d8cd7",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ac58e437",
+                  "fields": [
+                    {
+                      "name": "count(*)",
+                      "expression": "COUNT(`*`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "showDescription": true,
+                "title": "CNBC",
+                "description": "Artical count\n"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "count(*)"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "a38b47c5",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "4b1a2962",
+                  "fields": [
+                    {
+                      "name": "count(*)",
+                      "expression": "COUNT(`*`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "showDescription": true,
+                "title": "Time of India\n",
+                "description": "Artical count\n"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "count(*)"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 3,
+            "y": 0,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "4ab80b7b",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "1f17a42c",
+                  "fields": [
+                    {
+                      "name": "count(*)",
+                      "expression": "COUNT(`*`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "showDescription": true,
+                "title": "Economic times\n",
+                "description": "Artical count\n"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "count(*)"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 0,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "45420a12",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "5636f746",
+                  "fields": [
+                    {
+                      "name": "count(*)",
+                      "expression": "COUNT(`*`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "showDescription": true,
+                "title": "Hindu business",
+                "description": "Artical count\n"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "count(*)"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 3,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "9c9978f3",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "62d265c8",
+                  "fields": [
+                    {
+                      "name": "count(*)",
+                      "expression": "COUNT(`*`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "showDescription": true,
+                "title": "Mint",
+                "description": "Artical count\n"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "count(*)"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 3,
+            "y": 3,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "044735bc",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "4812ade4",
+                  "fields": [
+                    {
+                      "name": "count(*)",
+                      "expression": "COUNT(`*`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "showDescription": true,
+                "title": "Money Control",
+                "description": "Artical count\n"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "count(*)"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 3,
+            "width": 3,
+            "height": 3
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "canvasBackgroundColor": {
+        "light": "#FAFAFB",
+        "dark": "#1F272D"
+      },
+      "widgetBackgroundColor": {
+        "light": "#FFFFFF",
+        "dark": "#11171C"
+      },
+      "fontColor": {
+        "light": "#11171C",
+        "dark": "#E8ECF0"
+      },
+      "selectionColor": {
+        "light": "#2272B4",
+        "dark": "#8ACAFF"
+      },
+      "widgetHeaderAlignment": "CENTER",
+      "fontFamily": "Arial",
+      "textBoxVerticalAlign": "VERTICAL_ALIGN_CENTER"
+    },
+    "applyModeEnabled": false
+  }
+}
